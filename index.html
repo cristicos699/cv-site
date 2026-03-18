@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristian Costoiu | Personal Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Cristian Costoiu — personal engineering portfolio built from the updated CV, with projects, experience, and direct contact actions."
+    />
+    <meta name="theme-color" content="#f5f7fb" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="ambient ambient-c"></div>
+    <div class="noise"></div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-shell glass">
+        <a class="brand" href="#top">
+          <span class="brand-mark">CC</span>
+          <span class="brand-text">
+            <strong>Cristian Costoiu</strong>
+            <small>Personal Engineering Portfolio</small>
+          </span>
+        </a>
+
+        <nav class="nav" id="siteNav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="nav-pill" id="navCv" target="_blank" rel="noreferrer">CV</a>
+          <a class="nav-pill nav-pill-primary" id="navMail">Let’s talk</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container reveal">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-badge glass">
+              <span class="status-dot"></span>
+              <span id="availabilityText"></span>
+            </div>
+            <p class="eyebrow">Electrical • Telecom • Embedded • Networking</p>
+            <h1 id="heroHeadline"></h1>
+            <p class="hero-subheadline" id="heroSubheadline"></p>
+            <p class="hero-statement" id="heroStatement"></p>
+            <p class="hero-intro" id="heroIntro"></p>
+
+            <div class="typing-row">
+              <span>Currently focused on</span>
+              <strong id="typingText"></strong>
+              <span class="typing-caret"></span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary magnetic" id="heroMail">Contact me</a>
+              <a class="btn btn-secondary magnetic" id="heroCv" target="_blank" rel="noreferrer">View my CV</a>
+              <a class="btn btn-ghost magnetic" id="heroLinkedin" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+
+            <div class="hero-metrics" id="heroMetrics"></div>
+          </div>
+
+          <aside class="hero-panel glass reveal delay-1">
+            <div class="hero-panel-top">
+              <div>
+                <p class="micro-label">Snapshot</p>
+                <h2 id="heroName"></h2>
+              </div>
+              <div class="window-dots"><span></span><span></span><span></span></div>
+            </div>
+
+            <div class="profile-glow-card">
+              <p class="micro-label">Role</p>
+              <h3 id="heroRole"></h3>
+              <p id="heroTagline"></p>
+            </div>
+
+            <div class="focus-tiles" id="focusTiles"></div>
+
+            <div class="quick-actions">
+              <button class="action-card" id="copyEmailBtn">
+                <span>Copy email</span>
+                <strong id="emailLabel"></strong>
+              </button>
+              <a class="action-card" id="callCard">
+                <span>Phone</span>
+                <strong id="phoneLabel"></strong>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="about">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">About me</p>
+            <h2>Who I am, what I study, and what I have built so far</h2>
+          </div>
+          <p>
+            This section is about you first: your direction, your current level, and the kind of work you have already done across software, networking, embedded systems, and electronics.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass panel panel-large spotlight-card">
+            <p class="micro-label">Profile</p>
+            <p class="about-text" id="aboutText"></p>
+          </article>
+
+          <article class="glass panel">
+            <p class="micro-label">Quick facts</p>
+            <div class="fact-list" id="factList"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="education">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Education</p>
+            <h2>The academic foundation behind my technical work</h2>
+          </div>
+          <p>
+            Based on the corrected CV, including the updated start year and current study direction.
+          </p>
+        </div>
+
+        <article class="glass education-card spotlight-card">
+          <div class="education-copy">
+            <span class="time-pill" id="educationPeriod"></span>
+            <h3 id="educationInstitution"></h3>
+            <p id="educationFaculty"></p>
+            <p class="education-degree" id="educationDegree"></p>
+          </div>
+          <div class="education-side">
+            <div class="year-card" id="educationExtra"></div>
+            <div class="course-box">
+              <p class="micro-label">Relevant coursework</p>
+              <div class="course-tags" id="courseTags"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section container reveal" id="projects">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>What I have worked on so far</h2>
+          </div>
+          <p>
+            These cards are based on the real projects from the CV and show the kind of practical work I have already done.
+          </p>
+        </div>
+
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="section container reveal" id="experience">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2>What I have done outside the classroom</h2>
+          </div>
+          <p>
+            Beyond university projects, I have also worked in technical event environments and volunteered in large student events.
+          </p>
+        </div>
+
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="section container reveal" id="skills">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Skills</p>
+            <h2>Tools, technologies, and areas I work with</h2>
+          </div>
+          <p>
+            A quick overview of the technical tools and subjects that define my current profile.
+          </p>
+        </div>
+
+        <div class="skills-layout">
+          <article class="glass panel skill-cloud-panel spotlight-card">
+            <p class="micro-label">All skills</p>
+            <div class="skill-cloud" id="skillCloud"></div>
+          </article>
+
+          <div class="side-stack">
+            <article class="glass panel">
+              <p class="micro-label">Skill groups</p>
+              <div class="skill-groups" id="skillGroups"></div>
+            </article>
+
+            <article class="glass panel">
+              <p class="micro-label">Languages</p>
+              <div class="languages" id="languageList"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="contact">
+        <div class="contact-shell glass spotlight-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Want to talk about an internship, project, or opportunity?</h2>
+            <p>
+              You can open my CV, email me directly, call me, or check my GitHub and LinkedIn from here.
+            </p>
+          </div>
+          <div class="contact-actions" id="contactActions"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="floating-dock glass" id="floatingDock"></div>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p id="footerLine"></p>
+        <p>Personal portfolio rebuilt from the updated CV and shaped around real projects, experience, and contact details.</p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast">Email copied</div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
